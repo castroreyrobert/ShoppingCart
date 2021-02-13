@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/checkout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textSize="@dimen/text_size_title"
+        android:layout_margin="@dimen/margin_regular"
+        android:text="@string/checkout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/user_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkout_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/your_name"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:padding="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:hint="@string/e_g_jane_doe"
+            android:background="@drawable/ic_bg_edit_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/your_email"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:padding="@dimen/margin_regular"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:hint="@string/hint_email_add"
+            android:background="@drawable/ic_bg_edit_text"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_agree"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_form_toggle_off"
+        android:layout_margin="@dimen/margin_regular"
+        app:layout_constraintTop_toBottomOf="@id/user_input_layout"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textSize="12sp"
+        android:layout_margin="@dimen/margin_regular"
+        android:text="@string/i_agree_to_the_terms_and_conditions"
+        app:layout_constraintBottom_toBottomOf="@id/image_agree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_agree"
+        app:layout_constraintTop_toTopOf="@id/image_agree" />
+
+    <Button
+        android:id="@+id/button_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:layout_margin="@dimen/margin_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/margin_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="21sp"
+        app:layout_constraintTop_toBottomOf="@id/image_agree"
+        tools:text="Pay $350"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

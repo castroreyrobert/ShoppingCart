@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ShoppingCart</string>
+    <string name="shop">Shop</string>
+    <string name="products">Products</string>
+    <string name="all">All</string>
+    <string name="blazers">Blazers</string>
+    <string name="jackets">Jackets</string>
+    <string name="tees">Tees</string>
+    <string name="tee">Tee</string>
+    <string name="checkout">Checkout</string>
+    <string name="cart">Cart</string>
+    <string name="order_confirmation">Order Confirmation</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="your_name">Your name</string>
+    <string name="e_g_jane_doe">e.g Jane Doe</string>
+    <string name="your_email">Your email</string>
+    <string name="i_agree_to_the_terms_and_conditions">I agree to the terms and conditions</string>
+    <string name="your_order_has_been_processed">Your order has been processed</string>
+    <string name="return_to_products">Return to Products</string>
+    <string name="add">Add</string>]
+    <string name="newly_added">%1$s has been added to your cart.</string>
+    <string name="your_order_id_title">Your order id is \# %1$s</string>
+    <string name="blazer">Blazer</string>
+    <string name="jacket">Jacket</string>
+    <string name="no_items_in_the_cart">Please add an item in the cart first</string>
+    <string name="hint_email_add">e.g jane@company.co</string>
+</resources>
